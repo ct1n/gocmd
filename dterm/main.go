@@ -17,9 +17,7 @@ func main() {
 		h := os.Args[1]
 		if i := strings.IndexRune(h, '@'); i >= 0 {
 			u = h[:i]
-			if (i < len(h)-1) {
-				h = h[i+1:]
-			}
+			h = h[i+1:]
 		}
 		if len(u) > 0 {
 			args = append(args, "-u", u)
