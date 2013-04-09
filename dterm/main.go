@@ -22,7 +22,7 @@ func main() {
 			}
 		}
 		if len(u) > 0 {
-			args = append(args, "-u "+u)
+			args = append(args, "-u", u)
 		}
 		if len(h) > 0 {
 			args = append(args, "-c", h, "-a", h)
